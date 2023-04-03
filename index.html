@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount Calculator</title>
+    <!-- connecting to css file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- connecting to cdn js font awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+
+<body>
+    <!-- alert -->
+    <div class="alert">
+        <p>Price and discount box can't be empty!</p>
+    </div>
+
+    <!-- container start -->
+    <div class="container">
+        <!-- title -->
+        <h1><i class="fa-solid fa-tags"></i> Discount Calculator</h1>
+        <!-- form -->
+        <form id="form">
+            <input type="text" name="price" id="price" placeholder="Enter start price" autocomplete="off" autofocus>
+            <input type="text" name="discount" id="discount" placeholder="Enter discount" autocomplete="off">
+            <button type="submit"><i class="fa-solid fa-arrow-up-right-from-square"></i> Submit</button>
+        </form>
+        <!-- result -->
+        <span>
+            <p>Price after discount :</p>
+            <span class="wrapper-result"><small></small>
+                <h2 class="result">Not yet any discount to count !</h2>
+            </span>
+        </span>
+    </div>
+    <!-- container end -->
+
+    <!-- footer -->
+    <footer>
+        <small>Made With Chocolate, By: <a href="https://linktr.ee/dediindra_one/" target="_blank">Dedi Indrawan</a></small>
+    </footer>
+
+    <!-- connecting to javascript file -->
+    <script src="script.js"></script>
+</body>
+
+</html>
