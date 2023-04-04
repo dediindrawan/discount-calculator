@@ -11,7 +11,8 @@ form.addEventListener('submit', (e) => {
     // execute calculation
     if (priceInput.value == '' || discountInput.value == '') {
         // show alert
-        document.querySelector('.alert').style.display = 'block';
+        // document.querySelector('.alert').style.display = 'block';
+        alert('Harga awal dan diskon tidak boleh kosong!')
     } else {
         // show result
         const calculate = (priceInput.value * discountInput.value) / 100;

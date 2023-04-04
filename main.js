@@ -7,5 +7,5 @@ function openNavlink() {
 };
 
 function openKurangiDiskon() {
-    window.location.href = '/kurangi-diskon.html';
+    window.location.href = 'kurangi-diskon.html';
 };

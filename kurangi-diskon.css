@@ -49,6 +49,12 @@ section div form button {
   padding: 0.75em 3em;
 }
 
+section div span .wrapper-result {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
 /* responsive breakpoint */
 
 /* Extra small devices (phones, 600px and down) */
