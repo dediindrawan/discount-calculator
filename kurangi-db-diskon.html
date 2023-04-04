@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kalkulator Diskon | Kurangi Diskon</title>
+    <title>Kalkulator Diskon | Kurangi Double Diskon</title>
     <!-- connecting to css file -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="kurangi-diskon.css">
+    <link rel="stylesheet" href="kurangi-db-diskon.css">
     <!-- connecting to cdn js font awesome icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
 
@@ -36,8 +37,8 @@
                 <ul class="dropdown-list">
                     <li><a href="tambahkan-diskon.html">Tambahkan Diskon</a></li>
                     <li><a href="tambahkan-db-diskon.html">Tambahkan Double Diskon</a></li>
-                    <li><a href="#kurangi-diskon">Kurangi Diskon</a></li>
-                    <li><a href="kurangi-db-diskon.html">Kurangi Double Diskon</a></li>
+                    <li><a href="kurangi-diskon.html">Kurangi Diskon</a></li>
+                    <li><a href="#kurangi-db-diskon">Kurangi Double Diskon</a></li>
                 </ul>
             </li>
         </ul>
@@ -52,26 +53,29 @@
             <ul>
                 <li><a href="index.html">Beranda</a></li>
                 /
-                <li><a href="#kurangi-diskon">Kurangi Diskon</a></li>
+                <li><a href="#kurangi-db-diskon">Kurangi Double Diskon</a></li>
             </ul>
         </div>
     </header>
 
     <!-- container start -->
-    <section id="kurangi-diskon">
+    <section id="kurangi-db-diskon">
         <div>
             <!-- title -->
-            <h2><i class="fa-solid fa-calculator"></i> Kurangi Diskon</h2>
+            <h2><i class="fa-solid fa-calculator"></i> Kurangi Double Diskon</h2>
             <!-- form -->
             <form id="form">
                 <input type="text" name="price" id="price" placeholder="Masukkan harga awal" autocomplete="off"
                     autofocus>
-                <input type="text" name="discount" id="discount" placeholder="Masukkan nilai diskon" autocomplete="off">
+                <input type="text" name="discount" id="discount" placeholder="Masukkan nilai diskon 1"
+                    autocomplete="off">
+                <input type="text" name="discount" id="discount" placeholder="Masukkan nilai diskon 2"
+                    autocomplete="off">
                 <button type="submit"><i class="fa-solid fa-calculator"></i> Hitung</button>
             </form>
             <!-- result -->
             <span>
-                <p>Harga setelah di kurangi diskon :</p>
+                <p>Harga setelah di kurangi double diskon :</p>
                 <span class="wrapper-result"><small></small>
                     <h2 class="result">Belum ada harga yang dihitung !</h2>
                 </span>
