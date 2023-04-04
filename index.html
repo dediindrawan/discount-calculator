@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discount Calculator</title>
+    <title>Kalkulator Diskon</title>
     <!-- connecting to css file -->
     <link rel="stylesheet" href="style.css">
     <!-- connecting to cdn js font awesome icon -->
@@ -14,36 +14,165 @@
 <body>
     <!-- alert -->
     <div class="alert">
-        <p>Price and discount box can't be empty!</p>
+        <p>Harga awal dan diskon tidak boleh kosong!</p>
     </div>
 
+    <!-- wrapper navbar -->
+    <nav class="wrapper-navbar">
+        <!-- logo -->
+        <div class="logo">
+            <a href="#">
+                <h2>KalkulatorDiskon</h2>
+            </a>
+        </div>
+        <!-- navlink -->
+        <ul class="navlink">
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#about">Tentang</a></li>
+            <li class="dropdown">
+                <a href="#!">Hitung Diskon <i class="fa-solid fa-chevron-right"></i></a>
+                <!-- dropdown list -->
+                <ul class="dropdown-list">
+                    <li><a href="#!">Tambahkan Diskon</a></li>
+                    <li><a href="#!">Tambahkan Double Diskon</a></li>
+                    <li><a href="/kurangi-diskon.html">Kurangi Diskon</a></li>
+                    <li><a href="#!">Kurangi Double Diskon</a></li>
+                </ul>
+            </li>
+        </ul>
+        <!-- toggle menu -->
+        <i class="fa-solid fa-bars-staggered toggle-menu" onclick="openNavlink()"></i>
+    </nav>
+
+    <!-- jumbotron -->
+    <header class="jumbotron">
+        <div class="jumbotron-text">
+            <h1>Bingung Gimana Caranya Ngitung Diskon ?</h1>
+            <h1>Tenang, Ada <span>KalkulatorDiskon</span> Yang Siap Bantu Kamu !</h1>
+            <button type="submit" class="btn-explore">Jelajahi Sekarang</button>
+        </div>
+    </header>
+
     <!-- container start -->
-    <div class="container">
-        <!-- title -->
-        <h1><i class="fa-solid fa-tags"></i> Discount Calculator</h1>
-        <!-- form -->
-        <form id="form">
-            <input type="text" name="price" id="price" placeholder="Enter start price" autocomplete="off" autofocus>
-            <input type="text" name="discount" id="discount" placeholder="Enter discount" autocomplete="off">
-            <button type="submit"><i class="fa-solid fa-arrow-up-right-from-square"></i> Submit</button>
-        </form>
-        <!-- result -->
-        <span>
-            <p>Price after discount :</p>
-            <span class="wrapper-result"><small></small>
-                <h2 class="result">Not yet any discount to count !</h2>
-            </span>
-        </span>
-    </div>
+    <main class="container">
+        <section id="about">
+            <h1>Tentang Kami</h1>
+            <figure class="content">
+                <img src="https://images.unsplash.com/photo-1527264935190-1401c51b5bbc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                    alt="image">
+                <figcaption>
+                    <h2><i class="fa-solid fa-calculator"></i> Tambahkan Diskon</h2>
+                    <br>
+                    <p>Tambahkan Diskon adalah <span>KalkulatorDiskon</span> otomatis untuk menghitung berapa harga
+                        akhir
+                        setelah ditambahkan nilai diskon. Tenang aja, nilai yang dihasilkan 100% akurat sama seperti
+                        kamu menghitunganya di kalkulator biasa. Bedanya disini kamu nggak perlu repot mikirin cara
+                        ngitungnya gimana, karena semuanya udah otomatis. Nggak percaya? Coba buktiin sendiri.</p>
+                    <button type="submit">Mulai Sekarang</button>
+                </figcaption>
+            </figure>
+        </section>
+        <section>
+            <figure class="content">
+                <img src="https://images.unsplash.com/photo-1545535408-2b4d520cbd88?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzh8fGRpc2NvdW50fGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="image">
+                <figcaption>
+                    <h2><i class="fa-solid fa-calculator"></i> Tambahkan Double Diskon</h2>
+                    <br>
+                    <p>Tambahkan Double Diskon adalah <span>KalkulatorDiskon</span> otomatis untuk menghitung berapa
+                        harga
+                        akhir
+                        setelah ditambahkan dua kali nilai diskon. Tenang aja, nilai yang dihasilkan 100% akurat sama
+                        seperti
+                        kamu menghitunganya di kalkulator biasa. Bedanya disini kamu nggak perlu repot mikirin cara
+                        ngitungnya gimana, karena semuanya udah otomatis. Nggak percaya? Coba buktiin sendiri.</p>
+                    <button type="submit">Mulai Sekarang</button>
+                </figcaption>
+            </figure>
+        </section>
+        <section>
+            <figure class="content">
+                <img src="https://images.unsplash.com/photo-1572584642822-6f8de0243c93?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                    alt="image">
+                <figcaption>
+                    <h2><i class="fa-solid fa-calculator"></i> Kurangi Diskon</h2>
+                    <br>
+                    <p>Kurangi Diskon adalah <span>KalkulatorDiskon</span> otomatis untuk menghitung berapa harga
+                        akhir
+                        setelah dikurangi nilai diskon. Tenang aja, nilai yang dihasilkan 100% akurat sama seperti
+                        kamu menghitunganya di kalkulator biasa. Bedanya disini kamu nggak perlu repot mikirin cara
+                        ngitungnya gimana, karena semuanya udah otomatis. Nggak percaya? Coba buktiin sendiri.</p>
+                    <button type="submit" onclick="openKurangiDiskon()">Mulai Sekarang</button>
+                </figcaption>
+            </figure>
+        </section>
+        <section>
+            <figure class="content">
+                <img src="https://images.unsplash.com/photo-1571597438372-540dd352bf41?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDV8fGRpc2NvdW50fGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="image">
+                <figcaption>
+                    <h2><i class="fa-solid fa-calculator"></i> Kurangi Double Diskon</h2>
+                    <br>
+                    <p>Kurangi Double Diskon adalah <span>KalkulatorDiskon</span> otomatis untuk menghitung berapa harga
+                        akhir
+                        setelah dikurangi dua kali nilai diskon. Tenang aja, nilai yang dihasilkan 100% akurat sama
+                        seperti
+                        kamu menghitunganya di kalkulator biasa. Bedanya disini kamu nggak perlu repot mikirin cara
+                        ngitungnya gimana, karena semuanya udah otomatis. Nggak percaya? Coba buktiin sendiri.</p>
+                    <button type="submit">Mulai Sekarang</button>
+                </figcaption>
+            </figure>
+        </section>
+    </main>
     <!-- container end -->
 
     <!-- footer -->
     <footer>
-        <small>Made With Chocolate, By: <a href="https://linktr.ee/dediindra_one/" target="_blank">Dedi Indrawan</a></small>
+        <div class="credit">
+            <a href="#!">
+                <h2>KalkulatorDiskon</h2>
+            </a>
+            <br>
+            <p>Website penghitung diskon otomatis. Pasti akurat, anti meleset.</p>
+            <br>
+            <p><i class="fa-solid fa-envelope"></i> dediindrawan812@gmail.com</p>
+            <p><i class="fa-brands fa-whatsapp"></i> +62 897 4523 500</p>
+            <p><i class="fa-solid fa-location-dot"></i> Bogor, Indonesia</p>
+        </div>
+        <div class="documentation">
+            <h2>Dokumentasi</h2>
+            <br>
+            <ul>
+                <li><a href="#">Beranda</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#!">Tambahkan Diskon</a></li>
+                <li><a href="#!">Tambahkan Double Diskon</a></li>
+                <li><a href="/kurangi-diskon.html">Kurangi Diskon</a></li>
+                <li><a href="#!">Kurangi Double Diskon</a></li>
+            </ul>
+        </div>
+        <div class="social-media">
+            <h2>Sosial Media</h2>
+            <br>
+            <ul>
+                <li><a href="https://github.com/dediindrawan" target="_blank"><i class="fa-brands fa-github"></i>
+                        GitHub</a></li>
+                <li><a href="https://www.instagram.com/dediindra_one/" target="_blank"><i
+                            class="fa-brands fa-instagram"></i> Instagram</a></li>
+                <li><a href="https://www.youtube.com/channel/UC6O6PZDZYROxB4myIOJg7Eg" target="_blank"><i
+                            class="fa-brands fa-youtube"></i> YouTube</a></li>
+                <li><a href="#!"><i class="fa-brands fa-linkedin" target="_blank"></i> LinkedIn</a></li>
+            </ul>
+        </div>
     </footer>
 
+    <!-- copyright -->
+    <div class="copyright">
+        <p>Made With Coffee, By: <a href="https://linktr.ee/dediindra_one/" target="_blank">Dedi Indrawan</a></p>
+    </div>
+
     <!-- connecting to javascript file -->
-    <script src="script.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
