@@ -145,6 +145,7 @@ body {
 
 .wrapper-navbar .navlink .dropdown {
   height: 65px;
+  position: relative;
 }
 
 .wrapper-navbar .navlink .dropdown a {
@@ -383,13 +384,6 @@ footer .social-media i {
     height: max-content;
   }
 
-  .wrapper-navbar .navlink .dropdown-list {
-    position: absolute;
-    top: 195px;
-    right: 0;
-    z-index: 1;
-  }
-
   .wrapper-navbar .navlink .dropdown-list li a {
     width: 100%;
     padding: 1em 3em;
@@ -484,4 +478,124 @@ footer .social-media i {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+}
+
+/* Medium devices (landscape tablets, 550px and up) */
+@media screen and (min-device-width: 550px) and (max-device-width: 992px) and (orientation: landscape) {
+  h1 {
+    font-size: 1.25rem;
+  }
+
+  h2 {
+    font-size: 1.17rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  a {
+    font-size: 0.9rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+  }
+
+  /* wrapper nabar */
+  .wrapper-navbar {
+    height: 50px;
+    padding: 0 1.5em;
+  }
+
+  .wrapper-navbar .navlink {
+    width: 100%;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    left: -100%;
+    z-index: -1;
+    opacity: 0;
+    background: var(--gradient-color);
+    transition: var(--timing);
+  }
+
+  .wrapper-navbar .show-navlink {
+    left: 0;
+    opacity: 1;
+  }
+
+  .wrapper-navbar .navlink li:not(.dropdown-list li) {
+    width: 100%;
+    padding: 1.5em;
+    display: flex;
+    align-items: center;
+  }
+
+  .wrapper-navbar .navlink .dropdown {
+    height: max-content;
+  }
+
+  .wrapper-navbar .navlink .dropdown-list li a {
+    width: 100%;
+    padding: 1em 3em;
+    background: var(--gradient-color);
+    transition: var(--timing);
+  }
+
+  .wrapper-navbar .dropdown-list li a:hover {
+    opacity: 0.8;
+  }
+
+  .wrapper-navbar .navlink .dropdown:hover .dropdown-list {
+    display: block;
+    top: -130px;
+  }
+
+  .wrapper-navbar .toggle-menu {
+    display: block;
+    cursor: pointer;
+    transition: var(--timing);
+  }
+
+  .wrapper-navbar .toggle-menu:hover {
+    opacity: 0.7;
+  }
+
+  /* jumbotron */
+  .jumbotron .jumbotron-text {
+    text-align: center;
+  }
+
+  .jumbotron .jumbotron-text h1 {
+    padding: 0 1.5em;
+  }
+
+  /* container */
+  .container {
+    padding: 0 1.5em;
+  }
+
+  .container section figure img {
+    object-fit: fill;
+    aspect-ratio: 1/1;
+  }
+
+  /* footer */
+  footer {
+    padding: 0 1.5em;
+    flex-direction: column;
+  }
+
+  footer .documentation,
+  footer .social-media {
+    margin-top: 2em;
+  }
+
+  /* copyright */
+  .copyright {
+    padding: 1em 1.5em;
+    display: flex;
+    justify-content: center;
+  }
 }

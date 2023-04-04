@@ -43,3 +43,26 @@ section div form input {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
 }
+
+/* Medium devices (landscape tablets, 550px and up) */
+@media screen and (min-device-width: 550px) and (max-device-width: 992px) and (orientation: landscape) {
+  /* section */
+  section {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+
+  section div form {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  section div form input {
+    width: 100%;
+    margin-bottom: 2em;
+  }
+
+  section div form button {
+    width: 100%;
+  }
+}
