@@ -14,10 +14,13 @@ form.addEventListener('submit', (e) => {
         // document.querySelector('.alert').style.display = 'block';
         alert('Kolom input tidak boleh ada yang kosong!');
     } else {
-        // show result
-        const calculate = (priceInput.value * discountInput.value) / 100;
+        // convert string to number
+        const convertPrice = parseInt(priceInput.value);
+        const convertDiscount = parseInt(discountInput.value);
 
-        const result = priceInput.value - calculate;
+        // execute value & show result
+        const calculate = convertPrice * convertDiscount / 100;
+        const result = convertPrice - calculate;
 
         document.querySelector('.wrapper-result').innerHTML =
             `
@@ -27,7 +30,4 @@ form.addEventListener('submit', (e) => {
 
         document.querySelector('.alert').style.display = 'none';
     };
-
-    // clear input after submitted
-    priceInput.focus();
 });
