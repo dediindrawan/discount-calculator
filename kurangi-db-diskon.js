@@ -12,8 +12,7 @@ form.addEventListener('submit', (e) => {
     // execute calculation
     if (priceInput.value == '' || discountInputOne.value == '' || discountInputTwo.value == '') {
         // show alert
-        // document.querySelector('.alert').style.display = 'block';
-        alert('Kolom input tidak boleh ada yang kosong!');
+        document.querySelector('.alert').style.display = 'block';
     } else {
         // convert string to number
         const convertPrice = parseInt(priceInput.value);
@@ -32,7 +31,7 @@ form.addEventListener('submit', (e) => {
             <h2 class="result">${result}</h2>
             `;
 
-        document.querySelector('.result').style.fontSize = '4rem';
+        document.querySelector('.result').style.fontSize = '2rem';
 
         document.querySelector('.alert').style.display = 'none';
     };
