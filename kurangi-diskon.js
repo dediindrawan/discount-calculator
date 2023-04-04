@@ -12,7 +12,7 @@ form.addEventListener('submit', (e) => {
     if (priceInput.value == '' || discountInput.value == '') {
         // show alert
         // document.querySelector('.alert').style.display = 'block';
-        alert('Harga awal dan diskon tidak boleh kosong!')
+        alert('Kolom input tidak boleh ada yang kosong!');
     } else {
         // show result
         const calculate = (priceInput.value * discountInput.value) / 100;
@@ -29,7 +29,5 @@ form.addEventListener('submit', (e) => {
     };
 
     // clear input after submitted
-    priceInput.value = '';
-    discountInput.value = '';
     priceInput.focus();
 });
