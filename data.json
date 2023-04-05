@@ -1,0 +1,24 @@
+{
+  "data_content": [
+    {
+      "image": "https://images.unsplash.com/photo-1527264935190-1401c51b5bbc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "title": "Tambahkan Diskon",
+      "description": "Tambahkan Diskon adalah <span>KalkulatorDiskon</span> otomatis untuk menghitung berapa harga akhir yang bisa kamu tampilkan di price list produkmu setelah kamu menambahkan nilai diskon terlebih dahulu sebelum mempublikasikannya. Fitur ini mampu mendukung kebutuhanmu yang ingin menjajakan sebuah produk dengan iming-iming nilai diskon namun dengan perhitungan yang tepat agar terhindar dari kerugian."
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1545535408-2b4d520cbd88?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzh8fGRpc2NvdW50fGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+      "title": "Tambahkan Double Diskon",
+      "description": "Tambahkan Double Diskon adalah <span>KalkulatorDiskon</span> otomatis yang sangat tepat digunakan untuk menghitung berapa harga akhir setelah ditambahkan dua kali nilai diskon. Fitur ini menjadi solusi berhitungmu sebelum menerapkan nilai diskon ekstra pada produk yang kamu jual. Sebab perhitungan yang matang bisa mencegah usahamu dari kerugian, namun tetap dapat menarik minat pelanggan dengan double diskon."
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1572584642822-6f8de0243c93?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "title": "Kurangi Diskon",
+      "description": "Kurangi Diskon adalah <span>KalkulatorDiskon</span> otomatis yang bisa membantumu dalam menghitung berapa harga akhir sebuah produk setelah dikurangi nilai diskon. Buat kamu para pemburu diskon, fitur ini sangat pas untuk kamu gunakan sebagai bahan pertimbanganmu saat berbelanja agar dapat mengetahui secara pasti berapa harga yang perlu kamu siapkan dan bayarkan pada sebuah produk yang kamu beli."
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1571597438372-540dd352bf41?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDV8fGRpc2NvdW50fGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+      "title": "Kurangi Double Diskon",
+      "description": "Kurangi Double Diskon adalah <span>KalkulatorDiskon</span> otomatis yang dibuat untuk mencari tahu berapa harga akhir dari sebuah produk setelah dikurangi dua kali nilai diskon. Kamu pasti pernah melihat sebuah produk yang diberi dua kali nilai diskon, dan fitur ini tepat kamu gunakan untuk membantumu memonitor berapa besar budget yang mesti disiapkan sekalipun dihadapkan dengan potongan double diskon."
+    }
+  ]
+}

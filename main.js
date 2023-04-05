@@ -21,3 +21,6 @@ function openKurangiDiskon() {
 function openKurangiDbDiskon() {
     window.location.href = 'kurangi-db-diskon.html';
 };
+
+// create year of copyright
+document.querySelector('.copy-years').innerHTML = new Date().getFullYear();

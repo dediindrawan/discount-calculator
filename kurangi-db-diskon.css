@@ -1,6 +1,13 @@
 /* section */
-section div form input {
+section div form .input-group {
   width: 26.6%;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+}
+
+section div form .input-group input {
+  width: 100%;
 }
 
 /* responsive breakpoint */
@@ -18,7 +25,11 @@ section div form input {
     flex-direction: column;
   }
 
-  section div form input {
+  section div form .input-group {
+    width: 100%;
+  }
+
+  section div form .input-group input {
     width: 100%;
     margin-bottom: 2em;
   }

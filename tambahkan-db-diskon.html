@@ -10,13 +10,14 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="kurangi-diskon.css">
     <link rel="stylesheet" href="kurangi-db-diskon.css">
+    <link rel="stylesheet" href="tambahkan-diskon.css">
     <!-- connecting to cdn js font awesome icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
 
 <body>
     <!-- alert -->
     <div class="alert">
-        <h3>Harga awal dan diskon tidak boleh kosong!</h3>
+        <p>Harga awal dan diskon tidak boleh kosong!</p>
     </div>
 
     <!-- wrapper navbar -->
@@ -65,12 +66,19 @@
             <h2><i class="fa-solid fa-calculator"></i> Tambahkan Double Diskon</h2>
             <!-- form -->
             <form id="form">
-                <input type="text" name="price" id="price" placeholder="Masukkan harga awal" autocomplete="off"
-                    autofocus>
-                <input type="text" name="discount" id="discount-1" placeholder="Masukkan nilai diskon 1"
-                    autocomplete="off">
-                <input type="text" name="discount" id="discount-2" placeholder="Masukkan nilai diskon 2"
-                    autocomplete="off">
+                <span class="input-group">
+                    <label for="price"><small>Masukkan harga awal:</small></label>
+                    <input type="text" name="price" id="price" placeholder="Contoh: 100000" autocomplete="off"
+                        autofocus>
+                </span>
+                <span class="input-group">
+                    <label for="discount-1"><small>Masukkan nilai diskon pertama:</small></label>
+                    <input type="text" name="discount" id="discount-1" placeholder="Contoh: 25" autocomplete="off">
+                </span>
+                <span class="input-group">
+                    <label for="discount-2"><small>Masukkan nilai diskon kedua:</small></label>
+                    <input type="text" name="discount" id="discount-2" placeholder="Contoh: 20" autocomplete="off">
+                </span>
                 <button type="submit"><i class="fa-solid fa-calculator"></i> Hitung</button>
             </form>
             <!-- result -->
@@ -120,15 +128,16 @@
                         Instagram</a></li>
                 <li><a href="https://www.youtube.com/channel/UC6O6PZDZYROxB4myIOJg7Eg" target="_blank"><i
                             class="fa-brands fa-youtube"></i> YouTube</a></li>
-                <li><a href="https://www.linkedin.com/in/dediindrawan/"><i class="fa-brands fa-linkedin"
-                            target="_blank"></i> LinkedIn</a></li>
+                <li><a href="https://www.linkedin.com/in/dediindrawan/" target="_blank"><i
+                            class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
             </ul>
         </div>
     </footer>
 
     <!-- copyright -->
     <div class="copyright">
-        <p>Made With Coffee, By: <a href="https://linktr.ee/dediindra_one/" target="_blank">Dedi Indrawan</a></p>
+        <p>&copy; <span class="copy-years"></span> | Made With Coffee, By: <a href="https://linktr.ee/dediindra_one/"
+                target="_blank">Dedi Indrawan</a></p>
     </div>
 
     <!-- connecting to javascript file -->

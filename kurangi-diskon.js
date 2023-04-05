@@ -32,3 +32,6 @@ form.addEventListener('submit', (e) => {
         document.querySelector('.alert').style.display = 'none';
     };
 });
+
+// create year of copyright
+document.querySelector('.copy-years').innerHTML = new Date().getFullYear();
