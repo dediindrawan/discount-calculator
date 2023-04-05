@@ -171,6 +171,7 @@ body {
   right: 0;
   z-index: 1;
   display: none;
+  background: var(--gradient-color);
 }
 
 .wrapper-navbar .navlink .dropdown-list li {
@@ -180,7 +181,6 @@ body {
 .wrapper-navbar .navlink .dropdown-list li a {
   width: 100%;
   padding: 1em 3em;
-  background: var(--gradient-color);
   transition: var(--timing);
 }
 
@@ -374,6 +374,11 @@ footer .social-media i {
   .wrapper-navbar .show-navlink {
     left: 0;
     opacity: 1;
+  }
+
+  .wrapper-navbar .navlink .dropdown-list {
+    left: 0;
+    background: linear-gradient(to bottom right, rgb(110, 72, 170), rgb(157, 80, 187));
   }
 
   .wrapper-navbar .navlink li:not(.dropdown-list li) {
